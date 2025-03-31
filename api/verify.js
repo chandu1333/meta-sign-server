@@ -1,6 +1,6 @@
 const crypto = require("crypto");
 const fs = require("fs");
-const privateKey = fs.readFileSync("./private.pem", "utf8");
+const privateKey = fs.readFileSync("private.pem", "utf8");
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
